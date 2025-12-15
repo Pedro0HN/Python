@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Cadastro</title>
+</head>
+<body>
+    <nav class="cadastro">
+        <h1>Cadastro de Alunos</h1>
+    </nav>
+    <form action="{% url 'listagem_usuarios' %}" method="post">
+        {% csrf_token %}
+        <div class="tabela">
+        
+        <label for="text">Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <label for="text">Idade: </label>
+        <input type="number" name="idade" id="idade">
+        <input type="submit" value="Enviar">
+
+        </div>
+    </form>
+    
+</body>
+</html>

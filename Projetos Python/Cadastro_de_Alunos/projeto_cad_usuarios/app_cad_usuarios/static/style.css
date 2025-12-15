@@ -1,0 +1,70 @@
+/* Remove espaço padrão da página */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra do topo */
+.cadastro {
+    background-color: rgb(40, 123, 174);
+    text-align: center;
+    padding: 15px 0; /* espaço interno bonito */
+}
+
+/* Remove margem extra do título */
+.cadastro h1 {
+    margin: 0;
+}
+
+.tabela{
+    text-align: center;
+    
+}
+
+/* mostrar tablea */
+
+
+/* Centraliza a tabela na página */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+/* Cabeçalho da tabela */
+table thead {
+    background-color: #00c4cc;
+    color: #fff;
+}
+
+table thead th {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Corpo da tabela */
+table tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Linhas alternadas */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efeito hover */
+table tbody tr:hover {
+    background-color: #e0f7f9;
+    transition: 0.3s;
+}
+
+/* Borda geral */
+table, th, td {
+    border: 1px solid #ccc;
+}
+
